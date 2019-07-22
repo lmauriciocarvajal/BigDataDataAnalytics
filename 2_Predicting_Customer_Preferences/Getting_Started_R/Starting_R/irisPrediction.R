@@ -29,7 +29,8 @@ is.na(IrisDataset)
 
 #why I want to change to numeric?
 #IrisDataset$Species<- as.numeric(IrisDataset$Species) 
-
+#Renaming
+names(IrisDataset)<-c("Muestra","Sepal_Length","Sepal_Width","Petal_Length","Petal_Width","Species")
 #This is to set the random algorithm, so everytime I ran it, the random values are the same.      
 set.seed(123)
 #Changing th train size to 0.7
@@ -42,15 +43,23 @@ trainSize
 testSize
 #Creating the training datasets
 Training_indices<-sample(seq_len(nrow(IrisDataset)),size =trainSize)
-
+#Training the dataset
 trainSet <- IrisDataset[Training_indices, ]
-     testSet <- IrisDataset[-Training_indices, ]
-     set.seed(405)
-     trainSet <- IrisDataset[training_indices, ]
-     testSet <- IrisDataset[-training_indices, ]
-     LinearModel<- lm(trainSet$Petal.Width ~ testingSet$Petal.Length)
-     summary(LinearModel)
-  prediction<-predict(LinearModeltestSet)
-predictions
+#Test the dataset
+testSet <- IrisDataset[-Training_indices, ]
+#Deleting the 3 lines, due to The model has been already created.
+#set.seed(405)
+#trainSet <- IrisDataset[Training_indices, ]
+#testSet <- IrisDataset[-Training_indices, ]
+#Creating the linearModel, changing the parameters due to the goal is to predict a petal's length using the petal’s width
+
+LinearModel<- lm(Petal_Length~ Petal_Width,trainSet)
+#Summary of the linear Model
+summary(LinearModel)
+#The prediction, changing the arguments.
+prediction<-predict(LinearModel,testSet)
+#Priting the prediction, deleting the extra "s"
+prediction
+
      
      
