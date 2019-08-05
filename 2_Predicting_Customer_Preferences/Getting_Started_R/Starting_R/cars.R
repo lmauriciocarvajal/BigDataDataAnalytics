@@ -14,7 +14,7 @@ names(DatasetName) #Names your attributes within your data set.
 DatasetName$speed #Will print out the instances within that particular column in your data set.
 
 #Histogram Plot
-hist(DatasetName$speed)
+hist(DatasetName$distance)
 
 #Scatter (Box) Plot
 plot(DatasetName$speed,DatasetName$distance)
@@ -22,8 +22,8 @@ plot(DatasetName$speed,DatasetName$distance)
 #Normal Quantile Plot- is a way to see if your data is normally distributed.
 qqnorm(DatasetName$distance)
 #Need to understand the change between Factor data vs character data
-
 DatasetName$name<-as.character(DatasetName$name)
+DatasetName$name<-as.factor(DatasetName$name)
 
 #renaming the attributes/columns in the dataset
 names(DatasetName)<-c("name","speed","distance") 
@@ -51,5 +51,6 @@ LinearCarsModel<-lm(distance~ speed, trainSet)
 summary(LinearCarsModel)
 PredictionCarDistances<-predict(LinearCarsModel,testSet)
 PredictionCarDistances
+
 plot(PredictionCarDistances)
 
