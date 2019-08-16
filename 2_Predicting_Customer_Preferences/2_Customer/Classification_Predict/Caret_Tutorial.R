@@ -58,5 +58,5 @@ resamps <- resamples(list(pls = plsFit, rda = rdaFit))
 summary(resamps)
 diffs <- diff(resamps)
 summary(diffs)
-xyplot(resamps, what = "BlandAltman")
+xyplot(resamps, what = "BlandAltman") #Testing
                                   
