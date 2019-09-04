@@ -65,13 +65,13 @@ testing <- CompleteResponses[-inTrain,]
 #10 fold cross validation
 c50modelControl <- trainControl(method = "repeatedcv", number = 10,repeats = 3)
 
-c50model <- train(brand~., 
+c50modelTime<-system.time(c50model <- train(brand~., 
                 data = training, 
                 method = "C5.0", 
                 trControl=c50modelControl, 
                 tuneLength = 1,
                 preProc = c("center", "scale"),
-                verbose = TRUE)
+                verbose = TRUE))
 
 #Printing the model already trained
 c50model
@@ -82,17 +82,32 @@ varImp(c50model)
 #Creating second model c50 changing tunelength 2
 #######################################################################################
 #train Linear Regression model with a tuneLenght = 2 (trains with 2 mtry values for RandomForest)
-c50model2 <- train(brand~., 
+c50model2Time<-system.time(c50model2 <- train(brand~., 
                   data = training, 
                   method = "C5.0", 
                   trControl=c50modelControl, 
                   tuneLength = 2,
                   preProc = c("center", "scale"),
-                  verbose = TRUE)
+                  verbose = TRUE))
 #Printing the model already trained
 c50model2
 #Here we review how the model prioritized each feature in the training.
 varImp(c50model2)
+#######################################################################################
+#Creating second model c50 changing tunelength 3
+#######################################################################################
+#train Linear Regression model with a tuneLenght = 3 (trains with 3 mtry values for RandomForest)
+c50model3Time<-system.time(c50model3 <- train(brand~., 
+                                              data = training, 
+                                              method = "C5.0", 
+                                              trControl=c50modelControl, 
+                                              tuneLength = 3,
+                                              preProc = c("center", "scale"),
+                                              verbose = TRUE))
+#Printing the model already trained
+c50model3
+#Here we review how the model prioritized each feature in the training.
+varImp(c50model3)
 
 #######################################################################################
 #Creating RF Model with custon grid
@@ -100,29 +115,28 @@ varImp(c50model2)
 #This is not needed, we can reused, but I just leaved due to academic purposes. 
 rfmodelControl <- trainControl(method = "repeatedcv", number = 10,repeats = 3)
 #dataframe for manual tuning of mtry
-rfGrid <- expand.grid(mtry=c(1,2,3,4,5))
+rfGrid <- expand.grid(mtry=c(4,5,6,8,10))
 
 #traning the model with random forest
-rfmodel <- train(brand~., 
+rfmodel1Time<-system.time(rfmodel <- train(brand~., 
                   data = training, 
                   method = "rf", 
                   trControl=rfmodelControl, 
                   #tuneLength = 1,
                   tuneGrid=rfGrid, 
                   preProc = c("center", "scale"),
-                  verbose = TRUE)
+                  verbose = TRUE))
 
-rfmodelControlTest <- trainControl(method = "repeatedcv", number = 10,repeats = 1)
-rfGridTest <- expand.grid(mtry=c(8))
-rfmodelTest <- train(brand~., 
+rfmodelControlTest <- trainControl(method = "repeatedcv", number = 10,repeats = 3)
+rfGridTest <- expand.grid(mtry=c(12))
+rfmodelTestTime<-system.time(rfmodelTest <- train(brand~., 
                  data = training, 
                  method = "rf", 
                  trControl=rfmodelControlTest, 
                  #tuneLength = 1,
                  tuneGrid=rfGridTest, 
                  preProc = c("center", "scale"),
-                 verbose = TRUE)
-
+                 verbose = TRUE))
 #training results
 rfmodel
 varImp(rfmodel2)
