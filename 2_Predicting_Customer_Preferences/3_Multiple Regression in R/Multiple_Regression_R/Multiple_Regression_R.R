@@ -1,12 +1,18 @@
+######################################################################################
+#Mauricio Carvajal
+######################################################################################
+
+######################################################################################
+#Installing packages
+######################################################################################
 install.packages("corrplot")
 install.packages("PerformanceAnalytics")
 ######################################################################################
 #Libraries that are needed
 ######################################################################################
 library(corrplot)
-library(caret)
 library(PerformanceAnalytics)
-
+library(caret)
 #######################################################################################
 #Loading the Data
 #######################################################################################
@@ -19,6 +25,10 @@ existing_products <- read.csv("Datasets\\existingproductattributes2017.csv")
 # dummify the data
 newDataFrame <- dummyVars(" ~ .", data = existing_products)
 readyData <- data.frame(predict(newDataFrame, newdata = existing_products))
+#Categorical variables may be used directly as predictor or predicted variables in a multiple regression model 
+#as long as they've been converted to binary values. In order to pre-process the sales data as needed we first 
+#need to convert all factor or 'chr' classes to binary features that contain ‘0’ and ‘1’ classes. Fortunately,
+#caret has a method for creating these 'Dummy Variables' as follows:
 
 #Checking the correlation between the variables in the data
 #all variables must not contain nominal data types.
@@ -71,19 +81,19 @@ LinearModel<-lm(Volume~
                 + ProductType.Netbook
                 +ProductType.Smartphone, 
                 trainSet)
-LinearModel<-lm(Volume~ 
+LinearModel_PC<-lm(Volume~ 
                   ProductType.PC, 
                 trainSet)
 
 #Summary of the model
 summary(LinearModel)
 
-
 #Plotting the result model
 plot(LinearModel)
 
+
 #######################################################################################
-#Cehcking the data Near-zero or zero variance predictors
+#checking the data Near-zero or zero variance predictors
 #######################################################################################
 x = nearZeroVar(readyData, saveMetrics = TRUE)
 str(x, vec.len=2)
@@ -102,6 +112,7 @@ x[x[,"zeroVar"] + x[,"nzv"] > 0, ]
 inTrain <- createDataPartition(y = readyData$Volume,
                                p = .75, # As requested, will split the data in 75%
                                list = FALSE)
+
 #Having the 75% of the data for training the model
 trainSet <- readyData[ inTrain,]
 #Having the 25% of the data for testing the model
@@ -113,12 +124,16 @@ testSet <- readyData[-inTrain,]
 summary(readyData)
 trctrl <- trainControl(method = "repeatedcv", number = 10, repeats = 3)
 
-svm_LinearTime<-system.time(svm_Linear <- train(Volume ~., 
+svm_LinearTime<-system.time(
+              svm_Linear <- train(
+                    Volume ~., 
                     data = trainSet, 
                     method = "svmLinear",
-                    trControl=trctrl),
-                    preProcess = c("center", "scale"),
-                    tuneLength = 10))
+                    trControl=trctrl,
+                    #preProcess = c("center", "scale"),
+                    #tuneLength = 10
+                    )
+              )
 
 svm_Linear
 #######################################################################################

@@ -1,4 +1,8 @@
+#######################################################################################
 #Mauricio Carvajal
+#######################################################################################
+
+
 #######################################################################################
 #Intalling Packeges
 #######################################################################################
@@ -9,12 +13,15 @@ install.packages("matrixStats")
 install.packages("party")
 install.packages("zoo")
 install.packages("sandwich")
+install.packages("plotrix")
 #######################################################################################
 #Libraries needed for the script.
 #######################################################################################
 
 library(caret) #caret-->clasificacion and regresion testing
 library(C50)
+library(plotrix)
+library(ggplot2)
 #library(varImp)
 #######################################################################################
 #Reading the Responses of the survey.
@@ -47,8 +54,23 @@ CompleteResponses$brand<-as.factor(CompleteResponses$brand)
 str(CompleteResponses)
 
 #######################################################################################
+#Recursive Feature Elimination or RFE.
+#######################################################################################
+
+control <- rfeControl(functions=rfFuncs, method="cv", number=10)
+# run the RFE algorithm
+results <- rfe(
+    CompleteResponses[,1:6], 
+    CompleteResponses[,7], 
+    sizes=c(1:6), 
+    rfeControl=control)
+# summarize the results
+print(results)
+
+#######################################################################################
 #Creating the model c50
 #######################################################################################
+
 #Seed needed for repeability 
 set.seed(123)
 #Creating the datas sets for the training and testing.
@@ -91,6 +113,9 @@ c50model2Time<-system.time(c50model2 <- train(brand~.,
                   verbose = TRUE))
 #Printing the model already trained
 c50model2
+#Printing the time that took the model
+print(c50model2Time)
+
 #Here we review how the model prioritized each feature in the training.
 varImp(c50model2)
 #######################################################################################
@@ -139,12 +164,18 @@ rfmodelTestTime<-system.time(rfmodelTest <- train(brand~.,
                  verbose = TRUE))
 #training results
 rfmodel
-varImp(rfmodel2)
+varImp(rfmodel)
 #######################################################################################
 #Comparing the models in tearms of resampling
 #######################################################################################
 resamps <- resamples(list(C5.0 = c50model2, rf = rfmodel)) 
 summary(resamps)
+
+# boxplots of results
+bwplot(resamps)
+# dot plots of results
+dotplot(resamps)
+
 #Visualizing resamps
 xyplot(resamps, what = "BlandAltman")
 
@@ -184,6 +215,7 @@ str(SurveyIncomplete)
 #######################################################################################
 c50model2Predition <- predict(c50model2, newdata = SurveyIncomplete) 
 str(c50model2Predition)
+summary(c50model2Predition)
 
 c50model2Probs <- predict(c50model2, newdata = SurveyIncomplete, type = "prob")
 head(c50model2Probs)
@@ -192,14 +224,40 @@ head(c50model2Probs)
 confusionMatrix(data = c50model2Predition, SurveyIncomplete$brand)
 
 
-
 #Using the test set use postResample() to assess the metrics of the new predictions 
 #compared to the Ground Truth (see the resources for more information)
-postResampleData<-postResample(pred=c50model2Predition,obs=SurveyIncomplete$brand)
+# CompleteResponses and SurveyIncomplete
+postResampleData<-postResample(pred=c50model2Predition,obs=CompleteResponses$brand)
 postResampleData
 plot(postResampleData)
 
 
 #For something
 summary(c50model2Predition)
+plot(c50model2Predition)
+c50model2Predition
+#######################################################################################
+# Plotting the predictions
+#######################################################################################
+dataSummaryPrediction<-summary(c50model2Predition)
+dataSummaryPrediction
+#Plotting the predition of the brand
+#slices <- c(c50model2Predition["0"], c50model2Predition["1"])
+slices <- c(1844, 3156)
+lbls <- c("Acer", "Sony")
+pie3D(slices,labels=lbls,explode=0.1,
+      main="Pie Chart of predictions of the brand's preference ")
+
+
+#######################################################################################
+# Plotting the all 15000 brand preferences
+#######################################################################################
+#Printing CompleteResponses
+summary(CompleteResponses$brand)
+#Plotting the predition of the brand
+slices <- c(1844+3744, 3156+6154)
+lbls <- c("Acer", "Sony")
+pie + scale_fill_manual(values=c("#999999", "#E69F00"))
+pie3D(slices,labels=lbls,explode=0.1,
+      main="Pie Chart of predictions of the brand's preference ")
 
