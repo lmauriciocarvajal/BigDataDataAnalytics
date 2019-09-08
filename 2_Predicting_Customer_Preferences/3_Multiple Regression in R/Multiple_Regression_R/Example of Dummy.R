@@ -14,3 +14,9 @@ customers <- data.frame(
 dmy <- dummyVars(" ~ .", data = customers)
 trsf <- data.frame(predict(dmy, newdata = customers))
 print(trsf)
+
+
+require(caret)
+data(GermanCredit)
+
+require(MASS)
