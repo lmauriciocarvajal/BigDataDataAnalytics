@@ -104,6 +104,7 @@ varImp(c50model)
 #Creating second model c50 changing tunelength 2
 #######################################################################################
 #train Linear Regression model with a tuneLenght = 2 (trains with 2 mtry values for RandomForest)
+set.seed(123)
 c50model2Time<-system.time(c50model2 <- train(brand~., 
                   data = training, 
                   method = "C5.0", 
@@ -122,6 +123,7 @@ varImp(c50model2)
 #Creating second model c50 changing tunelength 3
 #######################################################################################
 #train Linear Regression model with a tuneLenght = 3 (trains with 3 mtry values for RandomForest)
+set.seed(123)
 c50model3Time<-system.time(c50model3 <- train(brand~., 
                                               data = training, 
                                               method = "C5.0", 
@@ -137,6 +139,7 @@ varImp(c50model3)
 #######################################################################################
 #Creating RF Model with custon grid
 #######################################################################################
+set.seed(123)
 #This is not needed, we can reused, but I just leaved due to academic purposes. 
 rfmodelControl <- trainControl(method = "repeatedcv", number = 10,repeats = 3)
 #dataframe for manual tuning of mtry
@@ -164,6 +167,9 @@ rfmodelTestTime<-system.time(rfmodelTest <- train(brand~.,
                  verbose = TRUE))
 #training results
 rfmodel
+#Testtime
+rfmodelTestTime
+
 varImp(rfmodel)
 #######################################################################################
 #Comparing the models in tearms of resampling
@@ -181,6 +187,9 @@ xyplot(resamps, what = "BlandAltman")
 
 diffs <- diff(resamps) 
 summary(diffs)
+#Comparing Testing 
+c50model2Time
+rfmodelTestTime
 
 #######################################################################################
 #
@@ -223,7 +232,6 @@ head(c50model2Probs)
 #Confusion Matrix
 confusionMatrix(data = c50model2Predition, SurveyIncomplete$brand)
 
-
 #Using the test set use postResample() to assess the metrics of the new predictions 
 #compared to the Ground Truth (see the resources for more information)
 # CompleteResponses and SurveyIncomplete
@@ -231,11 +239,11 @@ postResampleData<-postResample(pred=c50model2Predition,obs=CompleteResponses$bra
 postResampleData
 plot(postResampleData)
 
-
 #For something
 summary(c50model2Predition)
 plot(c50model2Predition)
 c50model2Predition
+
 #######################################################################################
 # Plotting the predictions
 #######################################################################################
@@ -259,5 +267,5 @@ slices <- c(1844+3744, 3156+6154)
 lbls <- c("Acer", "Sony")
 pie + scale_fill_manual(values=c("#999999", "#E69F00"))
 pie3D(slices,labels=lbls,explode=0.1,
-      main="Pie Chart of predictions of the brand's preference ")
+      main="Pie Chart brand's preference ",  col=c("green","blue"))
 
