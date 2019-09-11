@@ -240,7 +240,7 @@ readyNewProductData$x4StarReviews<-NULL
 #Final Prediction
 #######################################################################################
 
-finalPred<-predict(svm_Linear, newdata=readyNewProductData)
+finalPred<-predict(rfmodel, newdata=readyNewProductData)
 finalPred
 plot(finalPred)
 
@@ -254,9 +254,11 @@ output$predictions <- finalPred
 #search function to locate your output file.
 write.csv(output, file="C2.T3output.csv", row.names = TRUE)
 
-#######################################################################################
-#Add predictions to the new products data and then create a csv file
-#######################################################################################
+
+
+
+
+
 
 
 

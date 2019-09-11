@@ -69,7 +69,7 @@ image(sample(DatasetBasket, 150))
 # Apply the Apriori Algorithm
 ###########################################################################
 #These parameters are requesting that the rules cover 10% of the transactions and are 80% correct.
-RulesName<- apriori (DatasetBasket, parameter = list(supp = 0.02, conf = 0.45, minlen=2))
+RulesName<- apriori (DatasetBasket, parameter = list(supp = 0.0045, conf = 0.68, minlen=2))
 #To view your rules
 inspect(RulesName)
 
