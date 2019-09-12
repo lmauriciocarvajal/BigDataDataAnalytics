@@ -56,8 +56,8 @@ itemFrequencyPlot(DatasetBasket, topN = 10)
 
 itemFrequencyPlot(DatasetBasket, topN = 10,type = "relative")
 itemFrequencyPlot(DatasetBasket, topN = 10,type = "absolute")
-#checking by support, in this case the 9%
-itemFrequencyPlot(DatasetBasket, support = 0.09)
+#checking by support, in this case the 8%
+itemFrequencyPlot(DatasetBasket, support = 0.08)
 
 #Using image
 image(DatasetBasket)
@@ -78,7 +78,8 @@ inspect(RulesName)
 ###########################################################################
 summary(RulesName)
 #Print  only top 5 rules
-inspect(RulesName[1:5]) 
+inspect(sort(RulesName, by = "confidence")[1:5])
+
 
 ###########################################################################
 # Improving the model
