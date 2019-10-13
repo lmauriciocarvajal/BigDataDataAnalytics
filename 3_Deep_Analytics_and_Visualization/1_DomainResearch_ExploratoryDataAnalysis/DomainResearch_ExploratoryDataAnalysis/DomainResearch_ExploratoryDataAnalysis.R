@@ -104,7 +104,7 @@ tail(yr_2009)
 #############################################################################################
 #create a Multi-Year data frame that will serve as the primary data frame for the project
 ## Combine tables into one dataframe using dplyr
-unifyDataFrame <- bind_rows(yr_2006, yr_2007, yr_2008,yr_2009,yr_2010)
+unifyDataFrame <- bind_rows(yr_2006_all, yr_2007_all, yr_2008_all,yr_2009_all,yr_2010_all)
 #checking the structure
 str(unifyDataFrame)
 #summary
@@ -121,9 +121,10 @@ tail(unifyDataFrame)
 ## Combine Date and Time attribute values in a new attribute column
 unifyDataFrame <-cbind(unifyDataFrame,paste(unifyDataFrame$Date,unifyDataFrame$Time), stringsAsFactors=FALSE)
 
+#unifyDataFrame<-"0"
 ## Give the new attribute in the 6th column a header name 
 ## NOTE: if you downloaded more than 5 attributes you will need to change the column number)
-colnames(unifyDataFrame)[6] <-"DateTime"
+colnames(unifyDataFrame)[11] <-"DateTime"
 
 ## Move the DateTime attribute within the dataset
 unifyDataFrame <- unifyDataFrame[,c(ncol(unifyDataFrame), 1:(ncol(unifyDataFrame)-1))]
@@ -142,7 +143,7 @@ unifyDataFrame$year <- year(unifyDataFrame$DateTime)
 unifyDataFrame$quarter <- quarter(unifyDataFrame$DateTime)
 unifyDataFrame$month <- month(unifyDataFrame$DateTime)
 unifyDataFrame$week <- week(unifyDataFrame$DateTime)
-#unifyDataFrame$weekday <- weekday(unifyDataFrame$DateTime)
+unifyDataFrame$weekday <- weekday(unifyDataFrame$DateTime)
 unifyDataFrame$day <- day(unifyDataFrame$DateTime)
 unifyDataFrame$hour  <- hour(unifyDataFrame$DateTime)
 unifyDataFrame$minute <- minute(unifyDataFrame$DateTime)
@@ -151,8 +152,33 @@ unifyDataFrame$minute <- minute(unifyDataFrame$DateTime)
 # Initial Exploration of the Data
 #############################################################################################
 summary(unifyDataFrame)
+str(unifyDataFrame)
 
+#Creating new structure
+globalHeatMap <- unifyDataFrame[,c(5,12,14,15,16)]
+str(globalHeatMap)
 
+######## Plotting starts here#####################
+p <-ggplot(globalHeatMap,aes(day,hour,fill=Global_active_power))+
+  geom_tile(color= "white",size=0.1) + 
+  scale_fill_viridis(name="Hrly Temps C",option ="C")
+p <-p + facet_grid(year~month)
+p <-p + scale_y_continuous(trans = "reverse", breaks = unique(globalHeatMap$hour))
+p <-p + scale_x_continuous(breaks =c(1,10,20,31))
+p <-p + theme_minimal(base_size = 8)
+p <-p + labs(title= paste("Hourly Temps - Station"), x="Day", y="Hour Commencing")
+p <-p + theme(legend.position = "bottom")+
+  theme(plot.title=element_text(size = 14))+
+  theme(axis.text.y=element_text(size=6)) +
+  theme(strip.background = element_rect(colour="white"))+
+  theme(plot.title=element_text(hjust=0))+
+  theme(axis.ticks=element_blank())+
+  theme(axis.text=element_text(size=7))+
+  theme(legend.title=element_text(size=8))+
+  theme(legend.text=element_text(size=6))+
+  removeGrid()#ggExtra
 
+# you will want to expand your plot screen before this bit!
+p #awesomeness
 
 
