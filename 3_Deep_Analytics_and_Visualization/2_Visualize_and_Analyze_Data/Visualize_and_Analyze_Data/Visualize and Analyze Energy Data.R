@@ -402,59 +402,58 @@ ggplot(data, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=category)) +
 #############################################################################################
 # The sub-meter 3 with a frequency of 52 weekly observations per year
 #############################################################################################
+
 ## Subset to one observation per week on Mondays at 8:00pm for 2007, 2008 and 2009
-house070809weekly <- filter(unifyDataFrame, weekdays == "Tuesday" & hour == 20 & minute == 1)
+house070809weekly <- filter(unifyDataFrame, weekdays == "Monday" & hour == 20 & minute == 1 & (year == 2007 | year == 2008 | year == 2009))
 
 ## Create TS object with SubMeter3
 tsSM3_070809weekly <- ts(house070809weekly$Sub_metering_3, frequency=52, start=c(2007,1))
 
+## Plot sub-meter 3 with autoplot (you may need to install these packages)
+autoplot(tsSM3_070809weekly)
+
+## Plot sub-meter 3 with autoplot - add labels, color
+autoplot(tsSM3_070809weekly, ts.colour = 'red', xlab = "Time", ylab = "Watt Hours", main = "Sub-meter 3")
+
+## Plot sub-meter 3 with plot.ts
+plot.ts(tsSM3_070809weekly)
+#############################################################################################
+# The sub-meter 1 with a frequency of 12 observations 
+#############################################################################################
+
 ## Subset to one observation per week on Mondays at 8:00pm for 2007, 2008 and 2009
-houseweekly <- filter(unifyDataFrame, weekdays == "Monday" & hour == 20 & minute == 1 & (year == 2007 | year == 2008 | year == 2009))
+house070809Monthly <- filter(unifyDataFrame, (year == 2007 | year == 2008 | year == 2009))
 
 ## Create TS object with SubMeter3
-tsSM3_weekly <- ts(houseweekly$Sub_metering_3, frequency=52, start=c(2007,1))
+tsSM3_070809Monthly <- ts(house070809Monthly$Sub_metering_1, frequency=12, start=c(2007,1))
 
 ## Plot sub-meter 3 with autoplot (you may need to install these packages)
-autoplot(tsSM3_weekly)
+autoplot(tsSM3_070809Monthly)
+
 ## Plot sub-meter 3 with autoplot - add labels, color
-autoplot(tsSM3_weekly, ts.colour = 'red', xlab = "Time", ylab = "Watt Hours", main = "Sub-meter 3")
+autoplot(tsSM3_070809Monthly, ts.colour = 'red', xlab = "Time", ylab = "Watt Hours", main = "Sub-meter 1")
+
 ## Plot sub-meter 3 with plot.ts
-plot.ts(tsSM3_weekly)
+plot.ts(tsSM3_070809Monthly)
 
 #############################################################################################
-# The sub-meter 1 with a frequency of 52 weekly observations per year
+# The sub-meter 1 with a frequency of 12 observations 
 #############################################################################################
 
-## Subset to one observation per week on Tuesday at 8:00pm for 2007, 2008 and 2009
-houseweeklyTuesday <- filter(unifyDataFrame, weekdays == "Tuesday" & hour == 21 & minute == 1)
+## Subset to one observation per week on Mondays at 8:00pm for 2007, 2008 and 2009
+house070809Quaterly <- filter(unifyDataFrame, (year == 2007 | year == 2008 | year == 2009))
 
 ## Create TS object with SubMeter3
-tsS_weeklyTuesday <- ts(houseweeklyTuesday$Sub_metering_1, frequency=52, start=c(2007,1))
+tsSM3_070809Quaterly <- ts(house070809Quaterly$Sub_metering_2, frequency=4, start=c(2007,1))
 
 ## Plot sub-meter 3 with autoplot (you may need to install these packages)
-autoplot(tsS_weeklyTuesday)
+autoplot(tsSM3_070809Quaterly)
+
 ## Plot sub-meter 3 with autoplot - add labels, color
-autoplot(tsS_weeklyTuesday, ts.colour = 'blue', xlab = "Time", ylab = "Watt Hours", main = "Sub-meter 2")
+autoplot(tsSM3_070809Quaterly, ts.colour = 'red', xlab = "Time", ylab = "Watt Hours", main = "Sub-meter 1")
+
 ## Plot sub-meter 3 with plot.ts
-plot.ts(tsS_weeklyTuesday)
-
-#############################################################################################
-# The sub-meter 2 with a frequency of 52 weekly observations per year
-#############################################################################################
-
-## Subset to one observation per week on Tuesday at 8:00pm for 2007, 2008 and 2009
-houseweeklyTuesday <- filter(unifyDataFrame, weekdays == "Tuesday" & hour == 21 & minute == 1)
-
-## Create TS object with SubMeter3
-tsS_weeklyTuesday <- ts(houseweeklyTuesday$Sub_metering_1, frequency=52, start=c(2007,1))
-
-## Plot sub-meter 3 with autoplot (you may need to install these packages)
-autoplot(tsS_weeklyTuesday)
-## Plot sub-meter 3 with autoplot - add labels, color
-autoplot(tsS_weeklyTuesday, ts.colour = 'blue', xlab = "Time", ylab = "Watt Hours", main = "Sub-meter 2")
-## Plot sub-meter 3 with plot.ts
-plot.ts(tsS_weeklyTuesday)
-
+plot.ts(tsSM3_070809Quaterly)
 
 
 #############################################################################################
@@ -465,7 +464,8 @@ plot.ts(tsS_weeklyTuesday)
 #############################################################################################
 #############################################################################################
 
-## Apply time series linear regression to the sub-meter 3 ts object and use summary to obtain R2 and RMSE from the model you built
+## Apply time series linear regression to the sub-meter 3 ts object and use summary to obtain R2 
+## and RMSE from the model you built
 
 fitSM3 <- tslm(tsSM3_070809weekly ~ trend + season) 
 summary(fitSM3)
