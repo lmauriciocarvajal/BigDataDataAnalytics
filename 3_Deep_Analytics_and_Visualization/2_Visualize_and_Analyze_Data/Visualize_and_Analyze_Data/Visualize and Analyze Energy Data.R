@@ -404,57 +404,75 @@ ggplot(data, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=category)) +
 #############################################################################################
 
 ## Subset to one observation per week on Mondays at 8:00pm for 2007, 2008 and 2009
-house070809weekly <- filter(unifyDataFrame, weekdays == "Monday" & hour == 20 & minute == 1 & (year == 2007 | year == 2008 | year == 2009))
-
+house070809weekly <- filter(unifyDataFrame, weekdays == 'lunes' & hour == 20 & minute == 1 &(year == 2007 | year == 2008 | year == 2009) )
+summary(house070809weekly)
 ## Create TS object with SubMeter3
-tsSM3_070809weekly <- ts(house070809weekly$Sub_metering_3, frequency=52, start=c(2007,1))
+tsSM3_070809weekly <- ts( house070809weekly$Sub_metering_3, frequency=52, start=c(2007,1))
 
 ## Plot sub-meter 3 with autoplot (you may need to install these packages)
 autoplot(tsSM3_070809weekly)
 
 ## Plot sub-meter 3 with autoplot - add labels, color
-autoplot(tsSM3_070809weekly, ts.colour = 'red', xlab = "Time", ylab = "Watt Hours", main = "Sub-meter 3")
+autoplot(tsSM3_070809weekly, ts.colour = 'red', xlab = "Time", ylab = "Watt Hours", main = "Weekly Power Consupmtion by Sub-Meter 3")
 
 ## Plot sub-meter 3 with plot.ts
 plot.ts(tsSM3_070809weekly)
 #############################################################################################
-# The sub-meter 1 with a frequency of 12 observations 
+# The sub-meter 2 with a frequency of 12 observations per year
 #############################################################################################
 
 ## Subset to one observation per week on Mondays at 8:00pm for 2007, 2008 and 2009
-house070809Monthly <- filter(unifyDataFrame, (year == 2007 | year == 2008 | year == 2009))
+house070809Monthly <- filter(unifyDataFrame, day == 2 & hour == 7 & minute == 5 & (year == 2007 | year == 2008 | year == 2009) & (month == 1 | month == 2 | month == 3 | month == 4 | month == 5 | month == 6 | month == 7 | month == 8 | month == 9 | month == 10 | month == 11 | month == 12 )  )
 
 ## Create TS object with SubMeter3
-tsSM3_070809Monthly <- ts(house070809Monthly$Sub_metering_1, frequency=12, start=c(2007,1))
-
+tsSM3_070809Monthly <- ts(house070809Monthly$Sub_metering_2, frequency=12, start=c(2007,1))
+summary(tsSM3_070809Monthly)
+tsSM3_070809Monthly
 ## Plot sub-meter 3 with autoplot (you may need to install these packages)
-autoplot(tsSM3_070809Monthly)
+#autoplot(tsSM3_070809Monthly)
 
 ## Plot sub-meter 3 with autoplot - add labels, color
-autoplot(tsSM3_070809Monthly, ts.colour = 'red', xlab = "Time", ylab = "Watt Hours", main = "Sub-meter 1")
+autoplot(tsSM3_070809Monthly, xlab = "Time", ylab = "Watt Hours", main = "Monthly Power Consupmtion by Sub-Meter 2")
 
-## Plot sub-meter 3 with plot.ts
-plot.ts(tsSM3_070809Monthly)
 
 #############################################################################################
-# The sub-meter 1 with a frequency of 12 observations 
+# The sub-meter 1 with a frequency of 12 observations  with the mean of the month consupmtion
+#############################################################################################
+
+## Subset of average daily consumption for 2007 and 2008.
+house070809MonthlyMean <- filter(unifyDataFrame, (year == 2007 | year == 2008 | year == 2009))
+
+houseMonthlyConsump <- house070809MonthlyMean %>%
+  group_by(year, month) %>%
+  summarise(Submeter_1 = mean(Sub_metering_1))
+## Create TS object with SubMeters
+tsSM3_070809MonthlyMean <- ts (houseMonthlyConsump$Submeter_1, frequency = 12, start = c(2007,1))
+
+## Plot sub-meter 3 with autoplot - add labels, color
+autoplot(tsSM3_070809MonthlyMean, xlab = "Time", ylab = "Watt Hours", main = "Mean monthly consumption by sub meter 1")
+
+#############################################################################################
+# The sub-meter 1 with a frequency of 4 observations with the mean of the quarter consupmtion
 #############################################################################################
 
 ## Subset to one observation per week on Mondays at 8:00pm for 2007, 2008 and 2009
-house070809Quaterly <- filter(unifyDataFrame, (year == 2007 | year == 2008 | year == 2009))
+house070809QuaterlyMean <- filter(unifyDataFrame, (year == 2007 | year == 2008 | year == 2009))
+
+house070809QuaterlyMeanConsupmtion <- house070809QuaterlyMean %>%
+  group_by(year, quarter) %>%
+  summarise(Submeter_2 = mean(Sub_metering_2))
 
 ## Create TS object with SubMeter3
-tsSM3_070809Quaterly <- ts(house070809Quaterly$Sub_metering_2, frequency=4, start=c(2007,1))
+tsSM3_070809Quaterly <- ts(house070809QuaterlyMeanConsupmtion$Submeter_2, frequency=4, start=c(2007,1))
 
 ## Plot sub-meter 3 with autoplot (you may need to install these packages)
 autoplot(tsSM3_070809Quaterly)
 
 ## Plot sub-meter 3 with autoplot - add labels, color
-autoplot(tsSM3_070809Quaterly, ts.colour = 'red', xlab = "Time", ylab = "Watt Hours", main = "Sub-meter 1")
+autoplot(tsSM3_070809Quaterly, ts.colour = 'red', xlab = "Time", ylab = "Watt Hours", main = "Quarterly consumption by sub meter 1")
 
 ## Plot sub-meter 3 with plot.ts
 plot.ts(tsSM3_070809Quaterly)
-
 
 #############################################################################################
 #############################################################################################
@@ -462,6 +480,11 @@ plot.ts(tsSM3_070809Quaterly)
 # Part 3, Forecasting a time series
 #
 #############################################################################################
+#############################################################################################
+
+
+#############################################################################################
+# Forecast the sub-meter 3 with a frequency of 52 weekly observations per year
 #############################################################################################
 
 ## Apply time series linear regression to the sub-meter 3 ts object and use summary to obtain R2 
@@ -481,10 +504,48 @@ forecastfitSM3c <- forecast(fitSM3, h=20, level=c(80,90))
 
 ## Plot sub-meter 3 forecast, limit y and add labels
 plot(forecastfitSM3c, ylim = c(0, 20), ylab= "Watt-Hours", xlab="Time")
-#A sub-meter 3 plot you built in the walkthrough above
-#Sub-meter 1 with your choice of frequency, time period and confidence levels
-#Sub-meter 2 with your choice of frequency, time period and confidence levels
+
+#############################################################################################
+# Forecast the sub-meter 2 with a frequency of 12 monthly observations per year
+#############################################################################################
+fitSM2 <- tslm(tsSM3_070809Monthly ~ trend + season) 
+summary(fitSM2)
+
+## Create the forecast for sub-meter 3. Forecast ahead 20 time periods 
+forecastfitSM2 <- forecast(fitSM2, h=20)
+## Plot the forecast for sub-meter 3. 
+plot(forecastfitSM2)
+
+#################
+## Create sub-meter 3 forecast with confidence levels 80 and 90
+forecastfitSM1c <- forecast(fitSM2, h=20, level=c(80,90))
+
+## Plot sub-meter 3 forecast, limit y and add labels
+plot(forecastfitSM1c, ylim = c(0, 3), ylab= "Watt-Hours", xlab="Time",main="Forecasts of quarterly mean power consuption with confident level of 80,90")
+
+
+#############################################################################################
+# Forecast the sub-meter 1 with a frequency of 4 quaterly mean observations per year
+#############################################################################################
+fitSM1 <- tslm(tsSM3_070809Quaterly ~ trend + season) 
+summary(fitSM1)
+
+## Create the forecast for sub-meter 3. Forecast ahead 20 time periods 
+forecastfitSM1 <- forecast(fitSM1, h=20)
+## Plot the forecast for sub-meter 3. 
+plot(forecastfitSM1)
+
+#################
+## Create sub-meter 3 forecast with confidence levels 80 and 90
+forecastfitSM1c <- forecast(fitSM1, h=8, level=c(80,90))
+
+## Plot sub-meter 3 forecast, limit y and add labels
+plot(forecastfitSM1c, ylim = c(0, 3), ylab= "Watt-Hours", xlab="Time",main="Forecasts of montly power consuption with confident level of 80,90")
+
 #One comparison chart showing the R2 and RMSE of each model you built
+summary(fitSM1)
+summary(fitSM2)
+summary(fitSM3)
 
 #############################################################################################
 #############################################################################################
@@ -495,7 +556,7 @@ plot(forecastfitSM3c, ylim = c(0, 20), ylab= "Watt-Hours", xlab="Time")
 #############################################################################################
 
 #############################################################################################
-# Decomposition
+# Decomposition of the sub-meter 3 with a frequency of 4 quaterly mean observations per year
 #############################################################################################
 
 ## Decompose Sub-meter 3 into trend, seasonal and remainder
@@ -505,11 +566,35 @@ plot(components070809SM3weekly)
 ## Check summary statistics for decomposed sub-meter 3 
 summary(components070809SM3weekly)
 
+#############################################################################################
+# Decomposition of the sub-meter 1 with a frequency of 4 quaterly mean observations per year
+#############################################################################################
 
-#The sub-meter 3 decomposed plot you built in the walkthrough above
-#Sub-meter 1 decomposed plot with your choice of frequency and time period
-#Sub-meter 2 decomposed plot with your choice of frequency and time
-#One comparison chart showing the summary statistics for the seasonal, trend and remainder components from each decomposed object
+## Decompose Sub-meter 3 into trend, seasonal and remainder
+components070809SM2Monthly <- decompose(tsSM3_070809Monthly)
+## Plot decomposed sub-meter 3 
+plot(components070809SM2Monthly)
+## Check summary statistics for decomposed sub-meter 3 
+summary(components070809SM2Monthly)
+
+#############################################################################################
+# Decomposition of the sub-meter 1 with a frequency of 4 quaterly mean observations per year
+#############################################################################################
+
+## Decompose Sub-meter 3 into trend, seasonal and remainder
+components070809SM1Quaterly <- decompose(tsSM3_070809Quaterly)
+## Plot decomposed sub-meter 3 
+plot(components070809SM1Quaterly)
+## Check summary statistics for decomposed sub-meter 3 
+summary(components070809SM1Quaterly)
+
+#############################################################################################
+#One comparison chart showing the summary statistics for the seasonal, trend and remainder 
+#components from each decomposed object
+#############################################################################################
+summary(components070809SM1Quaterly)
+summary(components070809SM2Monthly)
+summary(components070809SM3weekly)
 
 #############################################################################################
 #############################################################################################
