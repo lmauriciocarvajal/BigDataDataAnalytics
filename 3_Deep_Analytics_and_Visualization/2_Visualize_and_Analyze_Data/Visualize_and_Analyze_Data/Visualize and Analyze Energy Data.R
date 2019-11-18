@@ -265,7 +265,7 @@ ggplot(data, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=category)) +
   xlim(c(-1, 4)) +
   theme_void() +
   #theme(legend.position = "none")
-  ggtitle("                                 Porcentaje de consumo en el dia14 del año 2009")
+  ggtitle("                                 Porcentage of power consupmtion  of 14/2009")
 
 
 
@@ -310,7 +310,7 @@ ggplot(data, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=category)) +
   xlim(c(-1, 4)) +
   theme_void() +
   #theme(legend.position = "none")
-  ggtitle("                                         Porcentaje de consumo en el año 2009")
+  ggtitle("                                         Porcentage of power consupmtion  of 2009")
 
 #############################################################################################
 # Pie charts ALL INFO
@@ -347,7 +347,7 @@ ggplot(data, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=category)) +
   xlim(c(-1, 4)) +
   theme_void() +
   #theme(legend.position = "none")
-  ggtitle("                             Porcentaje de consumo en el año 2009")
+  ggtitle("                             Porcentage of power consupmtion  of 2009")
 
 #############################################################################################
 # BY ALL TIME
@@ -389,7 +389,7 @@ ggplot(data, aes(ymax=ymax, ymin=ymin, xmax=4, xmin=3, fill=category)) +
   xlim(c(-1, 4)) +
   theme_void() +
   #theme(legend.position = "none")
-  ggtitle("                            Porcentaje de consumo de todas las mediciones")
+  ggtitle("                            Porcentage of power consupmtion  of 2007-2010")
 
 #############################################################################################
 #############################################################################################
@@ -421,7 +421,7 @@ plot.ts(tsSM3_070809weekly)
 # The sub-meter 2 with a frequency of 12 observations per year
 #############################################################################################
 
-## Subset to one observation per week on Mondays at 8:00pm for 2007, 2008 and 2009
+## Subset to one observation per week on Tuesday at 7:05am for 2007, 2008 and 2009
 house070809Monthly <- filter(unifyDataFrame, day == 2 & hour == 7 & minute == 5 & (year == 2007 | year == 2008 | year == 2009) & (month == 1 | month == 2 | month == 3 | month == 4 | month == 5 | month == 6 | month == 7 | month == 8 | month == 9 | month == 10 | month == 11 | month == 12 )  )
 
 ## Create TS object with SubMeter3
@@ -436,7 +436,7 @@ autoplot(tsSM3_070809Monthly, xlab = "Time", ylab = "Watt Hours", main = "Monthl
 
 
 #############################################################################################
-# The sub-meter 1 with a frequency of 12 observations  with the mean of the month consupmtion
+# The sub-meter 2 with a frequency of 12 observations  with the mean of the month consupmtion
 #############################################################################################
 
 ## Subset of average daily consumption for 2007 and 2008.
@@ -444,12 +444,12 @@ house070809MonthlyMean <- filter(unifyDataFrame, (year == 2007 | year == 2008 | 
 
 houseMonthlyConsump <- house070809MonthlyMean %>%
   group_by(year, month) %>%
-  summarise(Submeter_1 = mean(Sub_metering_1))
+  summarise(Mean_Sub_metering_2 = mean(Sub_metering_2))
 ## Create TS object with SubMeters
-tsSM3_070809MonthlyMean <- ts (houseMonthlyConsump$Submeter_1, frequency = 12, start = c(2007,1))
+tsSM3_070809MonthlyMean <- ts (houseMonthlyConsump$Mean_Sub_metering_2, frequency = 12, start = c(2007,1))
 
 ## Plot sub-meter 3 with autoplot - add labels, color
-autoplot(tsSM3_070809MonthlyMean, xlab = "Time", ylab = "Watt Hours", main = "Mean monthly consumption by sub meter 1")
+autoplot(tsSM3_070809MonthlyMean, xlab = "Time", ylab = "Watt Hours", main = "Mean monthly consumption by sub meter 2")
 
 #############################################################################################
 # The sub-meter 1 with a frequency of 4 observations with the mean of the quarter consupmtion
@@ -460,10 +460,10 @@ house070809QuaterlyMean <- filter(unifyDataFrame, (year == 2007 | year == 2008 |
 
 house070809QuaterlyMeanConsupmtion <- house070809QuaterlyMean %>%
   group_by(year, quarter) %>%
-  summarise(Submeter_2 = mean(Sub_metering_2))
+  summarise(Mean_Sub_metering_1 = mean(Sub_metering_1))
 
 ## Create TS object with SubMeter3
-tsSM3_070809Quaterly <- ts(house070809QuaterlyMeanConsupmtion$Submeter_2, frequency=4, start=c(2007,1))
+tsSM3_070809Quaterly <- ts(house070809QuaterlyMeanConsupmtion$Mean_Sub_metering_1, frequency=4, start=c(2007,1))
 
 ## Plot sub-meter 3 with autoplot (you may need to install these packages)
 autoplot(tsSM3_070809Quaterly)
@@ -508,20 +508,20 @@ plot(forecastfitSM3c, ylim = c(0, 20), ylab= "Watt-Hours", xlab="Time")
 #############################################################################################
 # Forecast the sub-meter 2 with a frequency of 12 monthly observations per year
 #############################################################################################
-fitSM2 <- tslm(tsSM3_070809Monthly ~ trend + season) 
+fitSM2 <- tslm(tsSM3_070809MonthlyMean ~ trend + season) 
 summary(fitSM2)
 
-## Create the forecast for sub-meter 3. Forecast ahead 20 time periods 
+## Create the forecast for sub-meter 2. Forecast ahead 20 time periods 
 forecastfitSM2 <- forecast(fitSM2, h=20)
-## Plot the forecast for sub-meter 3. 
+## Plot the forecast for sub-meter 2. 
 plot(forecastfitSM2)
 
 #################
-## Create sub-meter 3 forecast with confidence levels 80 and 90
+## Create sub-meter 2 forecast with confidence levels 80 and 90
 forecastfitSM1c <- forecast(fitSM2, h=20, level=c(80,90))
 
-## Plot sub-meter 3 forecast, limit y and add labels
-plot(forecastfitSM1c, ylim = c(0, 3), ylab= "Watt-Hours", xlab="Time",main="Forecasts of quarterly mean power consuption with confident level of 80,90")
+## Plot sub-meter 2 forecast, limit y and add labels
+plot(forecastfitSM1c, ylim = c(0, 3), ylab= "Watt-Hours", xlab="Time",main="Forecasts of monthly mean power consuption with confident level of 80,90 submeter 2")
 
 
 #############################################################################################
@@ -530,17 +530,17 @@ plot(forecastfitSM1c, ylim = c(0, 3), ylab= "Watt-Hours", xlab="Time",main="Fore
 fitSM1 <- tslm(tsSM3_070809Quaterly ~ trend + season) 
 summary(fitSM1)
 
-## Create the forecast for sub-meter 3. Forecast ahead 20 time periods 
+## Create the forecast for sub-meter 1. Forecast ahead 20 time periods 
 forecastfitSM1 <- forecast(fitSM1, h=20)
-## Plot the forecast for sub-meter 3. 
+## Plot the forecast for sub-meter 1. 
 plot(forecastfitSM1)
 
 #################
-## Create sub-meter 3 forecast with confidence levels 80 and 90
+## Create sub-meter 1 forecast with confidence levels 80 and 90
 forecastfitSM1c <- forecast(fitSM1, h=8, level=c(80,90))
 
-## Plot sub-meter 3 forecast, limit y and add labels
-plot(forecastfitSM1c, ylim = c(0, 3), ylab= "Watt-Hours", xlab="Time",main="Forecasts of montly power consuption with confident level of 80,90")
+## Plot sub-meter 1 forecast, limit y and add labels
+plot(forecastfitSM1c, ylim = c(0, 3), ylab= "Watt-Hours", xlab="Time",main="Forecasts of Quarterly power consuption with confident level of 80,90 submeter 1")
 
 #One comparison chart showing the R2 and RMSE of each model you built
 summary(fitSM1)
@@ -567,11 +567,11 @@ plot(components070809SM3weekly)
 summary(components070809SM3weekly)
 
 #############################################################################################
-# Decomposition of the sub-meter 1 with a frequency of 4 quaterly mean observations per year
+# Decomposition of the sub-meter 2 with a frequency of 12 monthly mean observations per year
 #############################################################################################
 
 ## Decompose Sub-meter 3 into trend, seasonal and remainder
-components070809SM2Monthly <- decompose(tsSM3_070809Monthly)
+components070809SM2Monthly <- decompose(tsSM3_070809MonthlyMean)
 ## Plot decomposed sub-meter 3 
 plot(components070809SM2Monthly)
 ## Check summary statistics for decomposed sub-meter 3 
@@ -592,10 +592,15 @@ summary(components070809SM1Quaterly)
 #One comparison chart showing the summary statistics for the seasonal, trend and remainder 
 #components from each decomposed object
 #############################################################################################
-summary(components070809SM1Quaterly)
-summary(components070809SM2Monthly)
-summary(components070809SM3weekly)
-
+summary(components070809SM1Quaterly$seasonal)
+summary(components070809SM1Quaterly$trend)
+summary(components070809SM1Quaterly$random)
+summary(components070809SM2Monthly$seasonal)
+summary(components070809SM2Monthly$trend)
+summary(components070809SM2Monthly$random)
+summary(components070809SM3weekly$seasonal)
+summary(components070809SM3weekly$trend)
+summary(components070809SM3weekly$random)
 #############################################################################################
 #############################################################################################
 #
@@ -604,6 +609,10 @@ summary(components070809SM3weekly)
 #############################################################################################
 #############################################################################################
 
+#############################################################################################
+#********************************************************************************************
+# SubMeter 3
+#********************************************************************************************
 #############################################################################################
 # Remove Seasonal Components
 #############################################################################################
@@ -634,8 +643,71 @@ tsSM3_HW070809forC <- forecast(tsSM3_HW070809, h=25, level=c(10,25))
 ## Plot only the forecasted area
 plot(tsSM3_HW070809forC, ylim = c(0, 20), ylab= "Watt-Hours", xlab="Time - Sub-meter 3", start(2010))
 
-#The sub-meter 3 forecast plot and a plot containing only the forecasted area from the walkthrough above
-#Sub-meter 1 forecast plot and a plot containing only the forecasted area. Your choice of frequency and time period.
-#Sub-meter 2 forecast plot and a plot containing only the forecasted area. Your choice of frequency and time period.
+#############################################################################################
+#********************************************************************************************
+# SubMeter 2
+#********************************************************************************************
+#############################################################################################
+# Remove Seasonal Components
+#############################################################################################
+
+## Seasonal adjusting sub-meter 3 by subtracting the seasonal component & plot
+tsSM2_070809AdjustedMonthly <- tsSM3_070809MonthlyMean - components070809SM2Monthly$seasonal
+autoplot(tsSM2_070809AdjustedMonthly)
+
+## Test Seasonal Adjustment by running Decompose again. Note the very, very small scale for Seasonal
+plot(decompose(tsSM2_070809AdjustedMonthly))
+
+#############################################################################################
+# HoltWinters Simple Exponential Smoothing
+#############################################################################################
+# Holt Winters Exponential Smoothing & Plot
+tsSM2_HW070809 <- HoltWinters(tsSM2_070809AdjustedMonthly, beta=FALSE, gamma=FALSE)
+plot(tsSM2_HW070809, ylim = c(0, 2.5))
+
+#############################################################################################
+# HoltWinters Forecast
+#############################################################################################
+## HoltWinters forecast & plot
+tsSM2_HW070809for <- forecast(tsSM2_HW070809, h=25)
+plot(tsSM2_HW070809for, ylim = c(0, 2.5), ylab= "Watt-Hours", xlab="Time - Sub-meter 3")
+
+## Forecast HoltWinters with diminished confidence levels
+tsSM2_HW070809forC <- forecast(tsSM2_HW070809, h=25, level=c(10,25))
+## Plot only the forecasted area
+plot(tsSM2_HW070809forC, ylim = c(0, 1.5), ylab= "Watt-Hours", xlab="Time - Sub-meter 3", start(2010))
+
+#############################################################################################
+#********************************************************************************************
+# SubMeter 1
+#********************************************************************************************
+#############################################################################################
+# Remove Seasonal Components
+#############################################################################################
+## Seasonal adjusting sub-meter 3 by subtracting the seasonal component & plot
+tsSM1_070809AdjustedQuarterly <- tsSM3_070809Quaterly - components070809SM1Quaterly$seasonal
+autoplot(tsSM1_070809AdjustedQuarterly)
+
+## Test Seasonal Adjustment by running Decompose again. Note the very, very small scale for Seasonal
+plot(decompose(tsSM1_070809AdjustedQuarterly))
+
+#############################################################################################
+# HoltWinters Simple Exponential Smoothing
+#############################################################################################
+# Holt Winters Exponential Smoothing & Plot
+tsSM1_HW070809 <- HoltWinters(tsSM1_070809AdjustedQuarterly, beta=FALSE, gamma=FALSE)
+plot(tsSM1_HW070809, ylim = c(0, 2))
+
+#############################################################################################
+# HoltWinters Forecast
+#############################################################################################
+## HoltWinters forecast & plot
+tsSM1_HW070809for <- forecast(tsSM1_HW070809, h=25)
+plot(tsSM1_HW070809for, ylim = c(0, 2), ylab= "Watt-Hours", xlab="Time - Sub-meter 1")
+
+## Forecast HoltWinters with diminished confidence levels
+tsSM1_HW070809forC <- forecast(tsSM1_HW070809, h=25, level=c(80,90))
+## Plot only the forecasted area
+plot(tsSM1_HW070809forC, ylim = c(0, 1.6), ylab= "Watt-Hours", xlab="Time - Sub-meter 1", start(2010))
 
 
