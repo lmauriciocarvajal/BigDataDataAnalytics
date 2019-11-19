@@ -360,8 +360,8 @@ dataAverageGlobalActive<-mean(unifyDataFrame$Global_active_power, na.rm = TRUE)
 dataAverageNotMeseaure<-((1000/60)*dataAverageGlobalActive)-dataAverageSub1-dataAverageSub2-dataAverageSub3
 # Create test data.
 data <- data.frame(
-  category=c("Sub_meter1", "Sub_meter2", "Sub_meter3"),
-  count=c(dataAverageSub1, dataAverageSub2, dataAverageSub3)
+  category=c("Sub_meter1", "Sub_meter2", "Sub_meter3","NotMeasurebySubMeter"),
+  count=c(dataAverageSub1, dataAverageSub2, dataAverageSub3,dataAverageNotMeseaure)
 )
 
 # Compute percentages
@@ -670,12 +670,12 @@ plot(tsSM2_HW070809, ylim = c(0, 2.5))
 #############################################################################################
 ## HoltWinters forecast & plot
 tsSM2_HW070809for <- forecast(tsSM2_HW070809, h=25)
-plot(tsSM2_HW070809for, ylim = c(0, 2.5), ylab= "Watt-Hours", xlab="Time - Sub-meter 3")
+plot(tsSM2_HW070809for, ylim = c(0, 2.5), ylab= "Watt-Hours", xlab="Time - Sub-meter 2")
 
 ## Forecast HoltWinters with diminished confidence levels
 tsSM2_HW070809forC <- forecast(tsSM2_HW070809, h=25, level=c(10,25))
 ## Plot only the forecasted area
-plot(tsSM2_HW070809forC, ylim = c(0, 1.5), ylab= "Watt-Hours", xlab="Time - Sub-meter 3", start(2010))
+plot(tsSM2_HW070809forC, ylim = c(0, 1.5), ylab= "Watt-Hours", xlab="Time - Sub-meter 2", start(2010))
 
 #############################################################################################
 #********************************************************************************************
