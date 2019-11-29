@@ -141,7 +141,7 @@ varImp(c50model3)
 #######################################################################################
 set.seed(123)
 #This is not needed, we can reused, but I just leaved due to academic purposes. 
-rfmodelControl <- trainControl(method = "repeatedcv", number = 10,repeats = 3)
+rfmodelControl <- trainControl(method = "repeatedcv", number = 10,repeats = 1)
 #dataframe for manual tuning of mtry
 rfGrid <- expand.grid(mtry=c(4,5,6,8,10))
 
@@ -151,11 +151,11 @@ rfmodel1Time<-system.time(rfmodel <- train(brand~.,
                   method = "rf", 
                   trControl=rfmodelControl, 
                   #tuneLength = 1,
-                  tuneGrid=rfGrid, 
+                  #tuneGrid=rfGrid, 
                   preProc = c("center", "scale"),
                   verbose = TRUE))
 
-rfmodelControlTest <- trainControl(method = "repeatedcv", number = 10,repeats = 3)
+rfmodelControlTest <- trainControl(method = "repeatedcv", number = 10,repeats = 1)
 rfGridTest <- expand.grid(mtry=c(12))
 rfmodelTestTime<-system.time(rfmodelTest <- train(brand~., 
                  data = training, 
