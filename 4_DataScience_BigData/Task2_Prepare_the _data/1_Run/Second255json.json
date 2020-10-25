@@ -1,0 +1,3558 @@
+[
+{
+"Name": "segment_1575540481076.11_file_00360",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00360.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00360",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00361",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00361.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00361",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00362",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00362.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00362",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00363",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00363.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00363",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00364",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00364.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00364",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00365",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00365.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00365",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00366",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00366.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00366",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00367",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00367.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00367",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00368",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00368.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00368",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00369",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00369.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00369",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00370",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00370.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00370",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00371",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00371.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00371",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00372",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00372.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00372",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00373",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00373.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00373",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00374",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00374.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00374",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00375",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00375.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00375",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00376",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00376.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00376",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00377",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00377.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00377",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00378",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00378.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00378",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00379",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00379.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00379",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00380",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00380.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00380",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00381",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00381.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00381",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00382",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00382.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00382",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00383",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00383.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00383",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00384",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00384.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00384",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00385",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00385.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00385",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00386",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00386.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00386",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00387",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00387.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00387",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00388",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00388.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00388",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00389",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00389.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00389",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00390",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00390.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00390",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00391",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00391.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00391",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00392",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00392.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00392",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00393",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00393.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00393",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00394",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00394.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00394",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00395",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00395.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00395",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00396",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00396.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00396",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00397",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00397.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00397",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00398",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00398.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00398",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00399",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00399.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00399",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00400",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00400.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00400",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00401",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00401.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00401",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00402",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00402.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00402",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00403",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00403.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00403",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00404",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00404.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00404",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00405",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00405.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00405",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00406",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00406.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00406",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00407",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00407.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00407",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00408",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00408.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00408",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00409",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00409.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00409",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00410",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00410.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00410",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00411",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00411.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00411",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00412",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00412.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00412",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00413",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00413.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00413",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00414",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00414.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00414",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00415",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00415.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00415",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00416",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00416.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00416",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00417",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00417.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00417",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00418",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00418.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00418",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00419",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00419.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00419",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00420",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00420.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00420",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00421",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00421.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00421",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00422",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00422.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00422",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00423",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00423.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00423",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00424",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00424.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00424",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00425",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00425.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00425",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00426",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00426.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00426",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00427",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00427.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00427",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00428",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00428.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00428",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00429",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00429.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00429",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00430",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00430.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00430",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00431",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00431.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00431",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00432",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00432.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00432",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00433",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00433.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00433",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00434",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00434.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00434",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00435",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00435.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00435",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00436",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00436.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00436",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00437",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00437.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00437",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00438",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00438.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00438",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00439",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00439.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00439",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00440",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00440.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00440",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00441",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00441.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00441",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00442",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00442.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00442",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00443",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00443.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00443",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00444",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00444.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00444",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00445",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00445.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00445",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00446",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00446.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00446",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00447",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00447.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00447",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00448",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00448.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00448",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00449",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00449.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00449",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00450",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00450.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00450",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00451",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00451.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00451",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00452",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00452.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00452",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00453",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00453.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00453",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00454",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00454.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00454",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00455",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00455.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00455",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00456",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00456.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00456",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00457",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00457.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00457",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00458",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00458.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00458",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00459",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00459.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00459",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00460",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00460.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00460",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00461",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00461.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00461",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00462",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00462.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00462",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00463",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00463.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00463",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00464",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00464.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00464",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00465",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00465.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00465",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00466",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00466.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00466",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00467",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00467.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00467",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00468",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00468.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00468",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00469",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00469.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00469",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00470",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00470.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00470",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00471",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00471.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00471",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00472",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00472.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00472",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00473",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00473.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00473",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00474",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00474.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00474",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00475",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00475.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00475",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00476",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00476.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00476",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00477",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00477.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00477",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00478",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00478.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00478",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00479",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00479.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00479",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00480",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00480.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00480",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00481",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00481.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00481",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00482",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00482.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00482",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00483",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00483.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00483",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00484",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00484.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00484",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00485",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00485.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00485",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00486",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00486.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00486",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00487",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00487.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00487",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00488",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00488.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00488",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00489",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00489.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00489",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00490",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00490.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00490",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00491",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00491.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00491",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00492",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00492.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00492",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00493",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00493.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00493",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00494",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00494.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00494",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00495",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00495.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00495",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00496",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00496.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00496",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00497",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00497.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00497",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00498",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00498.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00498",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00499",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00499.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00499",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00500",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00500.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00500",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00501",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00501.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00501",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00502",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00502.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00502",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00503",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00503.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00503",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00504",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00504.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00504",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00505",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00505.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00505",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00506",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00506.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00506",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00507",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00507.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00507",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00508",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00508.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00508",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00509",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00509.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00509",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00510",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00510.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00510",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00511",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00511.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00511",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00512",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00512.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00512",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00513",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00513.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00513",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00514",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00514.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00514",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00515",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00515.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00515",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00516",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00516.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00516",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00517",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00517.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00517",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00518",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00518.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00518",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00519",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00519.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00519",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00520",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00520.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00520",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00521",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00521.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00521",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00522",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00522.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00522",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00523",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00523.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00523",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00524",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00524.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00524",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00525",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00525.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00525",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00526",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00526.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00526",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00527",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00527.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00527",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00528",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00528.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00528",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00529",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00529.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00529",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00530",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00530.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00530",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00531",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00531.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00531",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00532",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00532.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00532",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00533",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00533.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00533",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00534",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00534.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00534",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00535",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00535.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00535",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00536",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00536.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00536",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00537",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00537.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00537",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00538",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00538.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00538",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00539",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00539.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00539",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00540",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00540.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00540",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00541",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00541.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00541",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00542",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00542.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00542",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00543",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00543.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00543",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00544",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00544.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00544",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00545",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00545.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00545",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00546",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00546.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00546",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00547",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00547.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00547",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00548",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00548.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00548",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00549",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00549.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00549",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00550",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00550.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00550",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00551",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00551.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00551",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00552",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00552.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00552",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00553",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00553.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00553",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00554",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00554.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00554",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00555",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00555.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00555",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00556",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00556.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00556",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00557",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00557.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00557",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00558",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00558.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00558",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481076.11_file_00559",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481076.11/wet/CC-MAIN-20191205141605-20191205165605-00559.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481076.11_00559",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00000",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00000.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00000",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00001",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00001.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00001",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00002",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00002.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00002",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00003",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00003.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00003",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00004",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00004.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00004",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00005",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00005.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00005",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00006",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00006.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00006",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00007",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00007.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00007",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00008",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00008.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00008",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00009",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00009.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00009",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00010",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00010.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00010",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00011",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00011.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00011",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00012",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00012.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00012",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00013",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00013.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00013",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00014",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00014.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00014",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00015",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00015.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00015",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00016",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00016.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00016",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00017",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00017.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00017",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00018",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00018.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00018",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00019",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00019.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00019",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00020",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00020.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00020",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00021",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00021.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00021",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00022",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00022.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00022",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00023",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00023.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00023",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00024",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00024.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00024",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00025",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00025.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00025",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00026",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00026.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00026",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00027",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00027.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00027",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00028",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00028.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00028",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00029",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00029.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00029",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00030",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00030.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00030",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00031",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00031.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00031",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00032",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00032.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00032",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00033",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00033.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00033",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00034",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00034.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00034",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00035",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00035.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00035",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00036",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00036.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00036",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00037",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00037.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00037",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00038",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00038.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00038",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00039",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00039.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00039",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00040",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00040.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00040",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00041",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00041.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00041",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00042",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00042.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00042",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00043",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00043.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00043",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00044",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00044.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00044",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00045",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00045.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00045",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00046",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00046.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00046",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00047",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00047.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00047",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00048",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00048.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00048",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00049",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00049.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00049",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00050",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00050.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00050",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00051",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00051.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00051",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00052",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00052.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00052",
+"-inputformat", "TextInputFormat"
+]
+},
+{
+"Name": "segment_1575540481281.1_file_00053",
+"ActionOnFailure": "CONTINUE",
+"Jar": "/usr/lib/hadoop-mapreduce/hadoop-streaming.jar",
+"Args":
+[
+"-files", "s3://mapperandreduce/Mapper.py,s3://mapperandreduce/Reducer.py",
+"-mapper", "Mapper.py",
+"-reducer", "Reducer.py",
+"-input", "s3://commoncrawl/crawl-data/CC-MAIN-2019-51/segments/1575540481281.1/wet/CC-MAIN-20191205164243-20191205192243-00053.warc.wet.gz",
+"-output", "s3://outputscripts/Final/1575540481281.1_00053",
+"-inputformat", "TextInputFormat"
+]
+}
+]

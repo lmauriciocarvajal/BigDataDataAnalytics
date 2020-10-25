@@ -7,26 +7,75 @@
 #Intalling Packeges
 #######################################################################################
 #install Packges for c50
-#installed.packages("C50", dependencies = c("Depends", "Suggests"))
+install.packages("C50", dependencies = TRUE)
+install.packages("cellranger", dependencies = TRUE)
+install.packages("inum", dependencies = TRUE)
+install.packages("caret", dependencies = c("Depends", "Suggests"))
+install.packages("rlang")
+install.packages("plyr")
+install.packages("ggplot2", dependencies = TRUE)
+install.packages("tidyverse", dependencies = TRUE)
+install.packages("lava", dependencies = TRUE)
 install.packages("varImp", dependencies = c("Depends", "Suggests"))
+install.packages("assertthat", dependencies = c("Depends", "Suggests"))
+install.packages("pkgconfig", dependencies = c("Depends", "Suggests"))
+install.packages("lifecycle", dependencies = c("Depends", "Suggests"))
+install.packages("backports", dependencies = c("Depends", "Suggests"))
+install.packages("gower", dependencies = c("Depends", "Suggests"))
+install.packages("lava", dependencies = c("Depends", "Suggests"))
+install.packages("rlang")
 install.packages("matrixStats")
+install.packages("ggplot2")
 install.packages("party")
 install.packages("zoo")
 install.packages("sandwich")
 install.packages("plotrix")
+install.packages("arules")
+install.packages("arulesViz")
+install.packages("caTools")
+install.packages("Matrix", dependencies = TRUE)
+install.packages("RMySQL", dependencies = TRUE)
+install.packages("lubridate", dependencies = TRUE)
+install.packages("forcats", dependencies = TRUE)
+install.packages("plotly", dependencies = TRUE)
+install.packages("ggfortify", dependencies = TRUE)
+install.packages("forecast", dependencies = TRUE)
+install.packages("dplyr", dependencies = c("Depends", "Suggests"))
+install.packages("lifecycle", dependencies = c("Depends", "Suggests"))
+install.packages("lazyeval", dependencies = c("Depends", "Suggests"))
+install.packages("gower", dependencies = c("Depends", "Suggests"))
+install.packages("C50", dependencies = c("Depends", "Suggests"))
+install.packages("inum", dependencies = c("Depends", "Suggests"))
+
+
+
 #######################################################################################
 #Libraries needed for the script.
 #######################################################################################
-
+library(lava)
 library(caret) #caret-->clasificacion and regresion testing
 library(C50)
 library(plotrix)
 library(ggplot2)
-#library(varImp)
+library(rlang)
+library(ggplot2)
+library(tidyverse)
+library(varImp)
+
+library(RMySQL)
+library(dplyr)
+library(lubridate)
+library(ggplot2)
+library(forcats)
+library(RColorBrewer)
+library(plotly)
+library(ggfortify)
+  library(forecast)
+
 #######################################################################################
 #Reading the Responses of the survey.
 #######################################################################################
-CompleteResponses <- read.csv("Data\\CompleteResponses.csv")
+CompleteResponses <- read.csv("Data\\iphone_smallmatrix_labeled_8d.csv")
 
 #######################################################################################
 #Starting getting knowleage of the data

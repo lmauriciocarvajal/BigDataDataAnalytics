@@ -1,0 +1,49 @@
+---
+title: "Develop models to predict sentiment"
+author: "Mauricio_Carvajal"
+date: "22/3/2020"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(eval = FALSE)
+```
+# 1. Libraries
+Loading the libraryes
+```{r message=FALSE}
+library(doParallel)
+library(plotly)
+library(caret) #caret-->clasificacion and regresion testing
+library(C50)
+library(plotrix)
+library(ggplot2)
+library(corrplot)
+library(varImp)
+library(e1071)  # For SVN
+library(kknn)   # For KNN
+library(dplyr)
+```
+
+# 2. Set up Parallel Processing
+
+
+2.1 Find how many cores are on your machine
+detectCores() # Result = Typically 4 to 6, I have 8 core so I will use 6
+2.2 Create Cluster with desired number of cores. Don't use them all! Your computer is running other processes.
+```{r}
+cl <- makeCluster(4)
+```
+2.3. Register Cluster
+```{r}
+registerDoParallel(cl)
+```
+2.4 Confirm how many cores are now "assigned" to R and RStudio
+```{r}
+getDoParWorkers() # Result 6, due to I have 8 core
+```
+Stop Cluster. After performing your tasks, stop your cluster.
+```{r }
+stopCluster(cl)
+```{r}
+
+
